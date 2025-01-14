@@ -91,7 +91,7 @@ partial class Form1
         // 
         comboBoxSala.DropDownStyle = ComboBoxStyle.DropDownList;
         comboBoxSala.FormattingEnabled = true;
-        comboBoxSala.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13" });
+        comboBoxSala.Items.AddRange(new object[] { "A", "Q", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13" });
         comboBoxSala.Location = new Point(280, 67);
         comboBoxSala.Name = "comboBoxSala";
         comboBoxSala.Size = new Size(121, 23);

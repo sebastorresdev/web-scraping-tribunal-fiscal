@@ -56,7 +56,7 @@ public partial class Form1 : Form
         progressBar.Style = ProgressBarStyle.Continuous;
         progressBar.Maximum = names.Count;
 
-        Stopwatch stopwatch = new Stopwatch();
+        var stopwatch = new Stopwatch();
 
         stopwatch.Start();
 
@@ -71,7 +71,7 @@ public partial class Form1 : Form
             var time = stopwatch.Elapsed;
 
             // Formateando el tiempo transcurrido (hh:mm:ss)
-            string formattedTime = string.Format("{0:D2}:{1:D2}:{2:D2}", time.Hours, time.Minutes, time.Seconds);
+            var formattedTime = string.Format("{0:D2}:{1:D2}:{2:D2}", time.Hours, time.Minutes, time.Seconds);
 
             UpdateLog($"Completado en {formattedTime}");
 
@@ -150,7 +150,7 @@ public partial class Form1 : Form
             {
                 foreach (var node in nodes)
                 {
-                    string extractedValue = node.InnerText.Trim();
+                    var extractedValue = node.InnerText.Trim().Replace("/","");
 
                     names.Add(extractedValue);
                 }
